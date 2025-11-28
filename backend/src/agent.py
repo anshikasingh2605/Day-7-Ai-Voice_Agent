@@ -153,7 +153,7 @@ def seed_database():
                 ("potato-1kg", "Fresh Potatoes", "Vegetables", 40.00, "", "1kg", "kg", json.dumps(["veg"])),
                 ("onion-1kg", "Fresh Onions", "Vegetables", 55.00, "", "1kg", "kg", json.dumps(["veg"])),
                 ("tomato-1kg", "Fresh Tomatoes", "Vegetables", 60.00, "", "1kg", "kg", json.dumps(["veg"])),
-        
+                ("ginger-100g", "Fresh Ginger", "Vegetables", 20.00, "", "100g", "g", json.dumps(["veg", "chai"])),
             ]
             cur.executemany("""
                 INSERT INTO catalog (id, name, category, price, brand, size, units, tags)
